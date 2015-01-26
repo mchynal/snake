@@ -3,6 +3,9 @@
       snd: new Audio("Boom-Kick.wav"),
 
       init: function(){
+        
+        window.onkeyup = this.control;
+
         this.segments = [{x:5,y:5},{x:4,y:5},{x:3,y:5},{x:2,y:5}];
         this.direction = 'right';
         this.apple = {x:10, y:10};
@@ -170,4 +173,4 @@
 
     }
 
-    window.onkeyup = snake.control;
+    
